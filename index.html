@@ -180,7 +180,7 @@
     <h2 class="h3 text mb-3">Contact</h2>
     <div class="row">
       <div class="col-md-7 d-print-none">
-        <div class="my-2"><form onsubmit="sendeemail();reset(); return false"
+        <div class="my-2"><form action="javascript:sendemail()" method="post"
     >
   <div class="row">
     <div class="col-4">
@@ -269,9 +269,9 @@
       function sendemail()
       {
         Email.send({
-          SecureToken :"73eeccf2-145f-41a0-b45e-bf8f8ebde677",
+          SecureToken:"ebfcf492-08d0-465f-9e50-fcabd188fd50",
           To : 'vinu.137002@gmail.com',
-           From : document.getElementById("email").value,
+           From : "vinu.137002@gmail.com",
    
     Subject : "New contact Form Enuiry",
     Body : "Name :"+document.getElementById("name").value
